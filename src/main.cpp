@@ -1,5 +1,6 @@
 #include "../shaders/shader.h"
 #include "glad.h"
+#include "glm/gtc/quaternion.hpp"
 #define STB_IMAGE_IMPLEMENTATION
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
@@ -8,11 +9,19 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
+GLFWwindow *window;
+
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
+glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 0.3f);
+glm::vec3 cameraZ = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraY = glm::vec3(0.0f, 1.0f, 0.0f);
+glm::vec3 cameraX = glm::vec3(1.0f,0.0f,0.0f);
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
 void render(GLFWwindow *window, unsigned int VAO, unsigned int texture1,
             unsigned int texture2, unsigned int shaderProgram);
 // simple vertex shader source code store in constant char string
-
+void input();
 int main() {
   // INITIALIZING GLFW
   glfwInit();
@@ -21,7 +30,7 @@ int main() {
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
   // CREATING WINDOW
-  GLFWwindow *window = glfwCreateWindow(800, 600, "hello", NULL, NULL);
+  window = glfwCreateWindow(800, 600, "hello", NULL, NULL);
 
   if (window == NULL) {
     std::cout << "FAILED TO CREATE GLFW WINDOW" << std::endl;
@@ -46,63 +55,44 @@ int main() {
   // TRIANGLE
   // vertex input
 
-  float vertices[] = {
-      // positions       // colors        // tex coords
-	-0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
-         0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
-         0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-         0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+  float vertices[] = {// positions                          // tex coords
+                      -0.5f, -0.5f, -0.5f, 0.0f,  0.0f,  0.5f,  -0.5f, -0.5f,
+                      1.0f,  0.0f,  0.5f,  0.5f,  -0.5f, 1.0f,  1.0f,  0.5f,
+                      0.5f,  -0.5f, 1.0f,  1.0f,  -0.5f, 0.5f,  -0.5f, 0.0f,
+                      1.0f,  -0.5f, -0.5f, -0.5f, 0.0f,  0.0f,
 
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-         0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-         0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
-         0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
-        -0.5f,  0.5f,  0.5f,  0.0f, 1.0f,
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+                      -0.5f, -0.5f, 0.5f,  0.0f,  0.0f,  0.5f,  -0.5f, 0.5f,
+                      1.0f,  0.0f,  0.5f,  0.5f,  0.5f,  1.0f,  1.0f,  0.5f,
+                      0.5f,  0.5f,  1.0f,  1.0f,  -0.5f, 0.5f,  0.5f,  0.0f,
+                      1.0f,  -0.5f, -0.5f, 0.5f,  0.0f,  0.0f,
 
-        -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-        -0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-        -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+                      -0.5f, 0.5f,  0.5f,  1.0f,  0.0f,  -0.5f, 0.5f,  -0.5f,
+                      1.0f,  1.0f,  -0.5f, -0.5f, -0.5f, 0.0f,  1.0f,  -0.5f,
+                      -0.5f, -0.5f, 0.0f,  1.0f,  -0.5f, -0.5f, 0.5f,  0.0f,
+                      0.0f,  -0.5f, 0.5f,  0.5f,  1.0f,  0.0f,
 
-         0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-         0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-         0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-         0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-         0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-         0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+                      0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.5f,  0.5f,  -0.5f,
+                      1.0f,  1.0f,  0.5f,  -0.5f, -0.5f, 0.0f,  1.0f,  0.5f,
+                      -0.5f, -0.5f, 0.0f,  1.0f,  0.5f,  -0.5f, 0.5f,  0.0f,
+                      0.0f,  0.5f,  0.5f,  0.5f,  1.0f,  0.0f,
 
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-         0.5f, -0.5f, -0.5f,  1.0f, 1.0f,
-         0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-         0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+                      -0.5f, -0.5f, -0.5f, 0.0f,  1.0f,  0.5f,  -0.5f, -0.5f,
+                      1.0f,  1.0f,  0.5f,  -0.5f, 0.5f,  1.0f,  0.0f,  0.5f,
+                      -0.5f, 0.5f,  1.0f,  0.0f,  -0.5f, -0.5f, 0.5f,  0.0f,
+                      0.0f,  -0.5f, -0.5f, -0.5f, 0.0f,  1.0f,
 
-        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
-         0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-         0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-         0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-        -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
-        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f
+                      -0.5f, 0.5f,  -0.5f, 0.0f,  1.0f,  0.5f,  0.5f,  -0.5f,
+                      1.0f,  1.0f,  0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.5f,
+                      0.5f,  0.5f,  1.0f,  0.0f,  -0.5f, 0.5f,  0.5f,  0.0f,
+                      0.0f,  -0.5f, 0.5f,  -0.5f, 0.0f,  1.0f
 
   };
- glm::vec3 cubePositions[] = {
-        glm::vec3( 0.0f,  0.0f,  0.0f),
-        glm::vec3( 2.0f,  5.0f, -15.0f),
-        glm::vec3(-1.5f, -2.2f, -2.5f),
-        glm::vec3(-3.8f, -2.0f, -12.3f),
-        glm::vec3( 2.4f, -0.4f, -3.5f),
-        glm::vec3(-1.7f,  3.0f, -7.5f),
-        glm::vec3( 1.3f, -2.0f, -2.5f),
-        glm::vec3( 1.5f,  2.0f, -2.5f),
-        glm::vec3( 1.5f,  0.2f, -1.5f),
-        glm::vec3(-1.3f,  1.0f, -1.5f)
-    };
+  glm::vec3 cubePositions[] = {
+      glm::vec3(0.0f, 0.0f, 0.0f),    glm::vec3(2.0f, 5.0f, -15.0f),
+      glm::vec3(-1.5f, -2.2f, -2.5f), glm::vec3(-3.8f, -2.0f, -12.3f),
+      glm::vec3(2.4f, -0.4f, -3.5f),  glm::vec3(-1.7f, 3.0f, -7.5f),
+      glm::vec3(1.3f, -2.0f, -2.5f),  glm::vec3(1.5f, 2.0f, -2.5f),
+      glm::vec3(1.5f, 0.2f, -1.5f),   glm::vec3(-1.3f, 1.0f, -1.5f)};
   unsigned int texture1, texture2;
   glGenTextures(1, &texture1);
   glBindTexture(GL_TEXTURE_2D, texture1);
@@ -116,7 +106,7 @@ int main() {
   int width, height, nrChannels;
   stbi_set_flip_vertically_on_load(true);
   unsigned char *data =
-      stbi_load("texture/sukuna.jpg", &width, &height, &nrChannels, 0);
+      stbi_load("../gyattrito.jpg", &width, &height, &nrChannels, 0);
   if (data != NULL) {
     GLenum format = GL_RGBA;
     if (nrChannels == 3) {
@@ -144,9 +134,8 @@ int main() {
 
   stbi_image_free(data);
 
-
-  unsigned int VBO, VAO ; // vertex buffer object(VBO) manages memory and
-                              // vertices on gpu  vertex array object(VAO)....
+  unsigned int VBO, VAO; // vertex buffer object(VBO) manages memory and
+                         // vertices on gpu  vertex array object(VAO)....
   glGenVertexArrays(1, &VAO);
   glGenBuffers(1, &VBO); // generating 1 vertex buffer object
 
@@ -157,11 +146,12 @@ int main() {
   glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
   // position attrib
- glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-    // texture coord attribute
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
+  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)0);
+  glEnableVertexAttribArray(0);
+  // texture coord attribute
+  glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
+                        (void *)(3 * sizeof(float)));
+  glEnableVertexAttribArray(1);
   glBindBuffer(GL_ARRAY_BUFFER, 0);
   glBindVertexArray(0);
 
@@ -191,24 +181,31 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
   glViewport(0, 0, width, height);
 }
 
+float angle = 0.0f;
 void render(GLFWwindow *window, unsigned int VAO, unsigned int texture1,
             unsigned int texture2, unsigned int shaderProgram) {
-glEnable(GL_DEPTH_TEST);  
+  glEnable(GL_DEPTH_TEST);
+
   while (glfwWindowShouldClose(window) == false) {
+    float currentFrame = (float)glfwGetTime();
+    deltaTime = currentFrame - lastFrame;
+    lastFrame = currentFrame;
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // this is the colour which is shown
                                           // when the colour buffer is cleared
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);         // this clears the colour buffer
+    input();
+
+    glClear(GL_COLOR_BUFFER_BIT |
+            GL_DEPTH_BUFFER_BIT); // this clears the colour buffer
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture1);
 
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, texture2);
-
     glm::mat4 model = glm::mat4(1.0f);
-    model = glm::rotate(model, (float)glfwGetTime() * glm::radians(-55.0f),
+    model = glm::rotate(model, (float)glfwGetTime() * glm::radians(angle),
                         glm::vec3(0.5f, 0.5f, 0.5f));
     glm::mat4 view = glm::mat4(1.0f);
-    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+    view = glm::lookAt(cameraPos, cameraPos + cameraZ, cameraY);
     glm::mat4 projection;
     projection =
         glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
@@ -220,10 +217,34 @@ glEnable(GL_DEPTH_TEST);
     glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
     glBindVertexArray(VAO);
-glDrawArrays(GL_TRIANGLES, 0, 36);
+    glDrawArrays(GL_TRIANGLES, 0, 36);
     glfwPollEvents(); // this processes events such as user input
     glfwSwapBuffers(
         window); // swaps the front buffer with the back buffer (image is
                  // rendered in the back buffer) this prevents flickering
+  }
+}
+void input() {
+  const float cameraSpeed = 5.1f * deltaTime;
+  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+    cameraPos += cameraSpeed * cameraZ;
+  }
+  if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+    cameraPos -= cameraSpeed * cameraZ;
+  }
+  if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+    cameraPos += cameraX * cameraSpeed;
+  }
+  if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+    cameraPos -= cameraX * cameraSpeed;
+  }
+  if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) {
+    cameraPos += cameraSpeed * cameraY;
+  }
+  if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS) {
+    cameraPos -= cameraSpeed * cameraY;
+  }
+  if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS) {
+    angle = -55.5f;
   }
 }

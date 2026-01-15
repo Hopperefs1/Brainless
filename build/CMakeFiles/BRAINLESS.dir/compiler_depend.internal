@@ -112,9 +112,21 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o
  /home/hopperefs/work/projects/graphics_engine/shaders/shader.h
  /home/hopperefs/work/projects/graphics_engine/src/glad.h
  /home/hopperefs/work/projects/graphics_engine/src/glm/common.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/simd/integer.h
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/_fixes.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer_simd.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing_simd.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_half.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_half.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/glm.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/common.h
  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/exponential.h
  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/geometric.h
+ /home/hopperefs/work/projects/graphics_engine/src/glm/simd/platform.h
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/_fixes.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/_vectorize.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_common.hpp
@@ -129,14 +141,19 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational.inl
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational_simd.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/precision.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/setup.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_float.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_int.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x2.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x2.inl
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x3.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x3.inl
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x4.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x4.inl
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x2.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x2.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x3.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x3.inl
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x4.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x4.inl
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x2.hpp
@@ -146,70 +163,53 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4.inl
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4_simd.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec1.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec1.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec2.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec2.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4_simd.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/fwd.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/geometric.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/mat2x2.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/mat2x3.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/mat2x4.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/mat3x2.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/mat3x3.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/mat3x4.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/mat4x2.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/mat4x3.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/mat4x4.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/simd/integer.h
  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/matrix.h
- /home/hopperefs/work/projects/graphics_engine/src/glm/simd/platform.h
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/_fixes.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer_simd.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix_simd.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing_simd.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric_simd.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/precision.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/setup.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_float.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_half.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_half.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_int.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x2.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x2.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec2.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec2.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec3.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec3.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4_simd.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/exponential.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/fwd.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/glm.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/constants.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/constants.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion_simd.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/matrix_transform.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/matrix_transform.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/type_ptr.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/type_ptr.inl
- /home/hopperefs/work/projects/graphics_engine/src/glm/integer.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/mat2x2.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/matrix.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/packing.hpp
- /home/hopperefs/work/projects/graphics_engine/src/glm/trigonometric.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/vec2.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/vec3.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/vec4.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix_simd.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric_simd.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x3.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x3.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec3.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec3.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/exponential.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/constants.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/constants.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/mat3x3.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/trigonometric.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/matrix_transform.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/matrix_transform.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion_simd.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/type_ptr.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/type_ptr.inl
+ /home/hopperefs/work/projects/graphics_engine/src/glm/integer.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/matrix.hpp
+ /home/hopperefs/work/projects/graphics_engine/src/glm/packing.hpp
  /home/hopperefs/work/projects/graphics_engine/src/glm/vector_relational.hpp
  /home/hopperefs/work/projects/graphics_engine/src/stb_image.h
  /usr/include/KHR/khrplatform.h
