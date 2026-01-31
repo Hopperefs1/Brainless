@@ -86,30 +86,30 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BRAINLESS.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hopperefs/work/projects/graphics_engine/src/main.cpp -o CMakeFiles/BRAINLESS.dir/src/main.cpp.s
 
-CMakeFiles/BRAINLESS.dir/src/glad.c.o: CMakeFiles/BRAINLESS.dir/flags.make
-CMakeFiles/BRAINLESS.dir/src/glad.c.o: /home/hopperefs/work/projects/graphics_engine/src/glad.c
-CMakeFiles/BRAINLESS.dir/src/glad.c.o: CMakeFiles/BRAINLESS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hopperefs/work/projects/graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BRAINLESS.dir/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BRAINLESS.dir/src/glad.c.o -MF CMakeFiles/BRAINLESS.dir/src/glad.c.o.d -o CMakeFiles/BRAINLESS.dir/src/glad.c.o -c /home/hopperefs/work/projects/graphics_engine/src/glad.c
+CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o: CMakeFiles/BRAINLESS.dir/flags.make
+CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o: /home/hopperefs/work/projects/graphics_engine/Dependencies/glad.c
+CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o: CMakeFiles/BRAINLESS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hopperefs/work/projects/graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o -MF CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o.d -o CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o -c /home/hopperefs/work/projects/graphics_engine/Dependencies/glad.c
 
-CMakeFiles/BRAINLESS.dir/src/glad.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BRAINLESS.dir/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hopperefs/work/projects/graphics_engine/src/glad.c > CMakeFiles/BRAINLESS.dir/src/glad.c.i
+CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hopperefs/work/projects/graphics_engine/Dependencies/glad.c > CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.i
 
-CMakeFiles/BRAINLESS.dir/src/glad.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BRAINLESS.dir/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hopperefs/work/projects/graphics_engine/src/glad.c -o CMakeFiles/BRAINLESS.dir/src/glad.c.s
+CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hopperefs/work/projects/graphics_engine/Dependencies/glad.c -o CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.s
 
 # Object files for target BRAINLESS
 BRAINLESS_OBJECTS = \
 "CMakeFiles/BRAINLESS.dir/src/main.cpp.o" \
-"CMakeFiles/BRAINLESS.dir/src/glad.c.o"
+"CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o"
 
 # External object files for target BRAINLESS
 BRAINLESS_EXTERNAL_OBJECTS =
 
 BRAINLESS: CMakeFiles/BRAINLESS.dir/src/main.cpp.o
-BRAINLESS: CMakeFiles/BRAINLESS.dir/src/glad.c.o
+BRAINLESS: CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o
 BRAINLESS: CMakeFiles/BRAINLESS.dir/build.make
 BRAINLESS: CMakeFiles/BRAINLESS.dir/compiler_depend.ts
 BRAINLESS: /usr/local/lib/libglfw3.a

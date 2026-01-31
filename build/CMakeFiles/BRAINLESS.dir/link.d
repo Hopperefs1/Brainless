@@ -3,7 +3,7 @@ BRAINLESS: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/BRAINLESS.dir/src/main.cpp.o \
-  CMakeFiles/BRAINLESS.dir/src/glad.c.o \
+  CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o \
   /usr/local/lib/libglfw3.a \
   /usr/lib/librt.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libdl.a \
@@ -55,7 +55,7 @@ BRAINLESS: \
 
 CMakeFiles/BRAINLESS.dir/src/main.cpp.o:
 
-CMakeFiles/BRAINLESS.dir/src/glad.c.o:
+CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o:
 
 /usr/local/lib/libglfw3.a:
 

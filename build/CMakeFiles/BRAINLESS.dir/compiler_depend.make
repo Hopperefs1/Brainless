@@ -32,11 +32,11 @@ BRAINLESS: /usr/lib/Scrt1.o \
   /usr/lib32/libXdmcp.so.6 \
   /usr/lib32/libxcb.so.1 \
   /usr/local/lib/libglfw3.a \
-  CMakeFiles/BRAINLESS.dir/src/glad.c.o \
+  CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o \
   CMakeFiles/BRAINLESS.dir/src/main.cpp.o
 
-CMakeFiles/BRAINLESS.dir/src/glad.c.o: /home/hopperefs/work/projects/graphics_engine/src/glad.c \
-  /home/hopperefs/work/projects/graphics_engine/src/glad.h \
+CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o: /home/hopperefs/work/projects/graphics_engine/Dependencies/glad.c \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glad.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
@@ -105,110 +105,114 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o: /home/hopperefs/work/projects/graphics_en
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
 CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_engine/src/main.cpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glad.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glad.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/common.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/common.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/exponential.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/geometric.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/_fixes.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/_vectorize.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_common.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_common.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_common_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_exponential.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_exponential.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_exponential_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_geometric.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_geometric.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_geometric_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_vector_relational.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_vector_relational.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_vector_relational_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x3.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x3.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x4.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x4.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x2.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x2.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x3.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x3.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x4.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x4.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x2.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x2.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x3.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x3.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x4.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x4.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x4_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec1.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec1.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/geometric.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat2x3.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat2x4.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat3x2.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat3x3.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat3x4.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat4x2.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat4x3.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat4x4.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/integer.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/matrix.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/platform.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/_fixes.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_integer.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_integer.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_integer_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_matrix.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_matrix.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_matrix_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_packing.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_packing.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_packing_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_trigonometric.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_trigonometric.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_trigonometric_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/precision.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/setup.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_float.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_half.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_half.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_int.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x2.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x2.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec2.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec2.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec3.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec3.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec4.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec4.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec4_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/exponential.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/fwd.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/glm.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/constants.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/constants.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/matrix_transform.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/matrix_transform.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/quaternion.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/quaternion.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/quaternion_simd.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/type_ptr.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/type_ptr.inl \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/integer.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat2x2.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/matrix.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/packing.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/trigonometric.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/vec2.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/vec3.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/vec4.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glm/vector_relational.hpp \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/stb_image.h \
+  /home/hopperefs/work/projects/graphics_engine/Dependencies/glad.h \
   /home/hopperefs/work/projects/graphics_engine/shaders/shader.h \
-  /home/hopperefs/work/projects/graphics_engine/src/glad.h \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/common.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/integer.h \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/_fixes.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_half.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_half.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/glm.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/common.h \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/exponential.h \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/geometric.h \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/platform.h \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/_fixes.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/_vectorize.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_common.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_common.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_common_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_exponential.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_exponential.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_exponential_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_geometric.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_geometric.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_geometric_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/precision.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/setup.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_float.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_int.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x2.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x2.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x3.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x3.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x4.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x4.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x2.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x2.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x4.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x4.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x2.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x2.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x3.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x3.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec1.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec1.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec2.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec2.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/fwd.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/geometric.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat2x2.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat2x3.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat2x4.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat3x2.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat3x4.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat4x2.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat4x3.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat4x4.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/simd/matrix.h \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/vec2.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/vec3.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/vec4.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x3.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x3.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec3.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec3.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/exponential.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/constants.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/constants.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/mat3x3.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/trigonometric.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/matrix_transform.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/matrix_transform.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion_simd.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/type_ptr.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/gtc/type_ptr.inl \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/integer.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/matrix.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/packing.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/glm/vector_relational.hpp \
-  /home/hopperefs/work/projects/graphics_engine/src/stb_image.h \
+  /home/hopperefs/work/projects/graphics_engine/src/camera.h \
+  /home/hopperefs/work/projects/graphics_engine/src/dependencies.h \
+  /home/hopperefs/work/projects/graphics_engine/src/texture.h \
+  /home/hopperefs/work/projects/graphics_engine/src/window.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -591,7 +595,7 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/x86gprintrin.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/vaesintrin.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/usermsrintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/uintrintrin.h:
 
@@ -621,11 +625,13 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movrsintrin.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/lzcntintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/lwpintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/ia32intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fxsrintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fmaintrin.h:
 
@@ -637,6 +643,8 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clflushoptintrin.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/cetintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/bmi2intrin.h:
@@ -647,7 +655,11 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniintrin.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniint8intrin.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniint16intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxneconvertintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vpopcntdqvlintrin.h:
 
@@ -661,13 +673,15 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512ifmavlintrin.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16vlintrin.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bitalgvlintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bf16vlintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bf16intrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx2intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2satcvtintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2convertintrin.h:
 
@@ -739,6 +753,12 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/type_traits:
 
+/usr/include/errno.h:
+
+/usr/include/c++/15.2.1/tuple:
+
+/usr/include/c++/15.2.1/tr1/special_function_util.h:
+
 /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/15.2.1/tr1/legendre_function.tcc:
@@ -755,8 +775,6 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/tr1/bessel_function.tcc:
 
-/usr/include/c++/15.2.1/string_view:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movdirintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16intrin.h:
@@ -764,6 +782,8 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 /usr/include/c++/15.2.1/string:
 
 /usr/include/c++/15.2.1/streambuf:
+
+/usr/include/c++/15.2.1/stdlib.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmi2intrin.h:
 
@@ -775,10 +795,6 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/new:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pmmintrin.h:
-
-/usr/include/c++/15.2.1/math.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmiintrin.h:
 
 /usr/include/c++/15.2.1/istream:
@@ -786,6 +802,8 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2bf16intrin.h:
 
 /usr/include/c++/15.2.1/initializer_list:
+
+/usr/include/c++/15.2.1/fstream:
 
 /usr/include/c++/15.2.1/ext/type_traits.h:
 
@@ -797,9 +815,9 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/debug/debug.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2mediaintrin.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlintrin.h:
 
-/usr/include/c++/15.2.1/debug/assertions.h:
+/usr/include/c++/15.2.1/cwctype:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/wmmintrin.h:
 
@@ -829,8 +847,6 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/cassert:
 
-/usr/include/c++/15.2.1/bits/version.h:
-
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
 /usr/include/c++/15.2.1/bits/uses_allocator.h:
@@ -843,6 +859,8 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
 
+/usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
+
 /usr/include/c++/15.2.1/bits/stl_iterator.h:
 
 /usr/include/c++/15.2.1/bits/stl_function.h:
@@ -853,19 +871,17 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/bits/std_abs.h:
 
-/usr/include/c++/15.2.1/bits/sstream.tcc:
-
 /usr/include/c++/15.2.1/bits/specfun.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pconfigintrin.h:
 
 /usr/include/c++/15.2.1/bits/requires_hosted.h:
 
+/usr/include/c++/15.2.1/bits/refwrap.h:
+
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
 /usr/include/c++/15.2.1/bits/range_access.h:
-
-/usr/include/c++/15.2.1/bits/ptr_traits.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/popcntintrin.h:
 
@@ -879,7 +895,7 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/bits/new_allocator.h:
 
-/usr/include/c++/15.2.1/bits/nested_exception.h:
+/usr/include/c++/15.2.1/bits/memoryfwd.h:
 
 /usr/include/c++/15.2.1/bits/memory_resource.h:
 
@@ -888,6 +904,8 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 /usr/include/c++/15.2.1/bits/locale_facets.h:
 
 /usr/include/c++/15.2.1/bits/locale_classes.tcc:
+
+/usr/include/c++/15.2.1/bits/ios_base.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512ifmaintrin.h:
 
@@ -899,11 +917,11 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/bits/hash_bytes.h:
 
+/usr/include/c++/15.2.1/bits/functexcept.h:
+
 /usr/include/time.h:
 
 /usr/include/c++/15.2.1/bits/fstream.tcc:
-
-/usr/include/c++/15.2.1/bits/exception_ptr.h:
 
 /usr/include/c++/15.2.1/bits/exception_defines.h:
 
@@ -913,53 +931,53 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/c++/15.2.1/bits/concept_check.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlbwintrin.h:
+/usr/include/c++/15.2.1/bits/char_traits.h:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+/usr/include/c++/15.2.1/bits/basic_string.tcc:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x2.inl:
 
-/usr/lib/libgcc_s.so.1:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x2.hpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtransposeintrin.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x4.hpp:
 
-/usr/include/bits/types/time_t.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec2.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/fwd.hpp:
+/usr/include/bits/types/struct_tm.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/simd/platform.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_vector_relational_simd.inl:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/simd/exponential.h:
+/usr/include/c++/15.2.1/iosfwd:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/simd/geometric.h:
+/usr/include/bits/types/struct_timeval.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/_vectorize.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_geometric.hpp:
 
-/usr/include/bits/iscanonical.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/vec4.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/simd/common.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/vector_relational.hpp:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16vlintrin.h:
 
-/usr/include/bits/types/__sigset_t.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_common.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_half.hpp:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/waitpkgintrin.h:
 
-/usr/include/errno.h:
+/usr/include/bits/time64.h:
 
-/usr/include/c++/15.2.1/tuple:
+/usr/include/bits/stdlib-float.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/common.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer.hpp:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/_fixes.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/exponential.h:
 
-/usr/include/c++/15.2.1/bits/cxxabi_forced.h:
-
-/home/hopperefs/work/projects/graphics_engine/shaders/shader.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/matrix_transform.inl:
 
 /usr/include/bits/wctype-wchar.h:
+
+/usr/include/sys/cdefs.h:
 
 /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc:
 
@@ -967,35 +985,31 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/stdlib.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix_simd.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/quaternion.hpp:
 
 /usr/include/gnu/stubs.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
-/usr/include/gnu/stubs-64.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fintrin.h:
 
-/usr/include/bits/endianness.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_packing_simd.inl:
 
-/usr/include/c++/15.2.1/bits/ios_base.h:
+/usr/include/c++/15.2.1/bits/exception_ptr.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x3.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x3.hpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h:
 
 /usr/include/features-time64.h:
 
-/usr/include/c++/15.2.1/stdlib.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x2.inl:
-
-/usr/lib/librt.a:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_trigonometric_simd.inl:
 
 /usr/include/bits/waitflags.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/geometric.hpp:
+/usr/lib/libdl.a:
 
-/usr/lib/libXau.so.6:
+/usr/include/bits/uintn-identity.h:
 
 /usr/include/c++/15.2.1/bits/string_view.tcc:
 
@@ -1003,19 +1017,15 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/crti.o:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec1.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/matrix_transform.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing_simd.inl:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/vpclmulqdqintrin.h:
 
 /usr/include/bits/wordsize.h:
 
 /usr/include/stdio.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x3.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x4.hpp:
 
 /usr/include/c++/15.2.1/tr1/poly_hermite.tcc:
 
@@ -1027,7 +1037,9 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/bits/types/struct_timespec.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x3.inl:
+/usr/include/bits/types/sigset_t.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_exponential.hpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitxintrin.h:
 
@@ -1041,9 +1053,11 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/bits/mathcalls.h:
 
-/usr/include/bits/types/__mbstate_t.h:
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/bits/stdio_lim.h:
+/usr/include/bits/types/__sigset_t.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec2.inl:
 
 /usr/include/bits/types/__locale_t.h:
 
@@ -1053,13 +1067,19 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
 
+/usr/include/bits/timesize.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vp2intersectintrin.h:
 
 /usr/lib32/libXau.so.6:
 
-/usr/include/bits/types/sigset_t.h:
+/usr/include/bits/types/__mbstate_t.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec3.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/precision.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec4.hpp:
+
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/15.2.1/exception:
 
@@ -1067,49 +1087,31 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/include/asm-generic/types.h:
 
-/usr/include/sys/cdefs.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x4.inl:
+
+/usr/lib/librt.a:
 
 /usr/include/bits/select.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/constants.hpp:
+
+/usr/lib32/libX11.so.6:
 
 /usr/include/sys/select.h:
 
 /usr/lib/libm.so.6:
 
-/usr/include/c++/15.2.1/tr1/special_function_util.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat3x3.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/simd/integer.h:
-
-/usr/include/bits/stdint-least.h:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
 /usr/include/assert.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_exponential_simd.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_packing.inl:
-
-/usr/lib/libmvec.so.1:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
 /usr/include/dlfcn.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer_simd.inl:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlbwintrin.h:
 
-/usr/include/c++/15.2.1/cstddef:
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
-/usr/lib/libgcc_s.so:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_exponential.hpp:
-
-/usr/include/sys/types.h:
-
-/usr/local/lib/libglfw3.a:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x4.inl:
 
 /usr/include/c++/15.2.1/limits:
 
@@ -1131,29 +1133,39 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/wbnoinvdintrin.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glad.c:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_vector_relational.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_integer.hpp:
 
 /home/hopperefs/work/projects/graphics_engine/src/main.cpp:
 
 /usr/lib32/libGLdispatch.so.0:
 
+/usr/include/gnu/stubs-64.h:
+
+CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/vaesintrin.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/src/camera.h:
+
 /usr/lib/libGLdispatch.so.0:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
+/usr/include/c++/15.2.1/cstddef:
 
-/usr/include/bits/floatn-common.h:
+/usr/lib/libgcc_s.so:
+
+/usr/lib/libXdmcp.so.6:
+
+/home/hopperefs/work/projects/graphics_engine/src/dependencies.h:
 
 /usr/include/c++/15.2.1/bits/move.h:
 
 /usr/include/bits/types.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat4x2.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/precision.hpp:
 
 /usr/lib/libc_nonshared.a:
 
@@ -1173,49 +1185,43 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/libOpenGL.so:
 
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat2x2.hpp:
+
 /usr/include/c++/15.2.1/bits/functional_hash.h:
 
 /usr/lib/crtn.o:
 
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_exponential.inl:
+
+/usr/lib/libXau.so.6:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/common.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
 
-/usr/include/c++/15.2.1/bits/functexcept.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/stb_image.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_half.inl:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
 
 /usr/include/bits/types/locale_t.h:
 
-/usr/include/bits/uintn-identity.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/_vectorize.hpp:
 
-/usr/lib/libdl.a:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/packing.hpp:
-
-/usr/include/bits/types/struct_tm.h:
+/home/hopperefs/work/projects/graphics_engine/src/texture.h:
 
 /usr/include/locale.h:
 
 /usr/lib/libstdc++.so:
 
-/usr/include/c++/15.2.1/bits/refwrap.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/matrix.hpp:
-
 /usr/lib/libm.so:
 
 /usr/include/c++/15.2.1/bits/locale_classes.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_integer.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x4.inl:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x3.hpp:
 
 /usr/include/alloca.h:
 
-/usr/include/bits/timesize.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/glm.hpp:
-
-/usr/include/bits/types/mbstate_t.h:
+/usr/lib/libgcc_s.so.1:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bwintrin.h:
 
@@ -1225,17 +1231,23 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: /home/hopperefs/work/projects/graphics_
 
 /usr/lib/libc.so:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x2.inl:
-
 /usr/lib/libX11.so.6:
 
 CMakeFiles/BRAINLESS.dir/src/main.cpp.o:
 
 /usr/include/asm/types.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tbmintrin.h:
+
+/usr/include/c++/15.2.1/bits/codecvt.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_geometric.inl:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sm4intrin.h:
 
 /usr/include/bits/types/struct_FILE.h:
+
+/usr/lib32/libxcb.so.1:
 
 /usr/include/c++/15.2.1/cmath:
 
@@ -1245,15 +1257,17 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bf16vlintrin.h:
+/usr/include/c++/15.2.1/bits/ptr_traits.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec2.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec4.inl:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxneconvertintrin.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/glm.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glad.h:
+/usr/include/bits/endianness.h:
 
-CMakeFiles/BRAINLESS.dir/src/glad.c.o:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glad.c:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glad.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -1269,29 +1283,25 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/bits/atomic_wide_counter.h:
 
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x4.hpp:
+
 /usr/include/bits/byteswap.h:
 
-/usr/include/bits/types/error_t.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/_fixes.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_exponential.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/fwd.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/constants.hpp:
+/usr/include/bits/stdio_lim.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x2.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_geometric_simd.inl:
 
-/usr/include/string.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat4x4.hpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clflushoptintrin.h:
+/usr/include/c++/15.2.1/bits/charconv.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_geometric.hpp:
+/usr/include/bits/mathcalls-helper-functions.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x3.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/waitpkgintrin.h:
-
-/usr/include/bits/time64.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/common.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_matrix.inl:
 
 /usr/include/bits/floatn.h:
 
@@ -1305,17 +1315,13 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/asm-generic/posix_types.h:
 
-/usr/include/c++/15.2.1/iosfwd:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_vector_relational.inl:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_common.inl:
+/usr/include/bits/sched.h:
 
-/usr/include/bits/types/struct_timeval.h:
+/usr/include/features.h:
 
-/usr/lib32/libXdmcp.so.6:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion.inl:
-
-/usr/include/KHR/khrplatform.h:
+/usr/include/bits/types/__FILE.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/cmpccxaddintrin.h:
 
@@ -1325,7 +1331,17 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/bits/cpu-set.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtransposeintrin.h:
+
+/usr/include/bits/types/time_t.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/geometric.h:
+
 /usr/include/bits/struct_rwlock.h:
+
+/usr/include/c++/15.2.1/stdexcept:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x2.hpp:
 
 /usr/include/c++/15.2.1/bits/predefined_ops.h:
 
@@ -1337,27 +1353,167 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/bits/endian.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4_simd.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/platform.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_geometric.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat3x3.inl:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/vec2.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_common.inl:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pkuintrin.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec3.inl:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric_simd.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x2.inl:
 
-/usr/include/asm/bitsperlong.h:
+/usr/include/sys/types.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/hresetintrin.h:
+/usr/local/lib/libglfw3.a:
 
-/usr/include/c++/15.2.1/bits/alloc_traits.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_int.hpp:
 
-/usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/type_ptr.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational_simd.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/vec2.hpp:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_geometric_simd.inl:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x4_simd.inl:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec1.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec1.inl:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_half.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/geometric.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat2x3.hpp:
+
+/usr/lib/libmvec.so.1:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat2x4.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_integer.inl:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/keylockerintrin.h:
+
+/usr/include/c++/15.2.1/bits/locale_facets.tcc:
+
+/usr/include/asm/posix_types_64.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat3x2.hpp:
+
+/usr/include/bits/stdint-least.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat3x4.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
+
+/usr/include/bits/floatn-common.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat4x3.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/integer.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_integer_simd.inl:
+
+/usr/include/c++/15.2.1/bits/version.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_matrix.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/quaternion.inl:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_matrix_simd.inl:
+
+/usr/include/c++/15.2.1/bits/nested_exception.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x2.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_packing.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_exponential_simd.inl:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_packing.inl:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pmmintrin.h:
+
+/usr/include/c++/15.2.1/math.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_trigonometric.hpp:
+
+/usr/lib32/libXdmcp.so.6:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/setup.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_float.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_half.inl:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec3.hpp:
+
+/usr/include/c++/15.2.1/bits/sstream.tcc:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat4x2.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/matrix.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_vec4_simd.inl:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2mediaintrin.h:
+
+/usr/include/c++/15.2.1/debug/assertions.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat4x3.inl:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/exponential.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/constants.inl:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/trigonometric.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxmovrsintrin.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/matrix_transform.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxintrin.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/15.2.1/bits/basic_ios.tcc:
+
+/usr/include/KHR/khrplatform.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/quaternion_simd.inl:
+
+/usr/include/c++/15.2.1/string_view:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/integer.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/packing.hpp:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/vec3.hpp:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/local/include/GLFW/glfw3.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/stb_image.h:
+
+/usr/include/c++/15.2.1/bits/cxxabi_forced.h:
+
+/home/hopperefs/work/projects/graphics_engine/shaders/shader.h:
+
+/usr/include/string.h:
+
+/home/hopperefs/work/projects/graphics_engine/src/window.h:
 
 /usr/include/asm-generic/errno.h:
 
@@ -1367,163 +1523,27 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/bits/fp-logb.h:
 
-/usr/local/include/GLFW/glfw3.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pkuintrin.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/setup.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_trigonometric.inl:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4.inl:
+/usr/include/asm/bitsperlong.h:
 
-/usr/include/c++/15.2.1/fstream:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/hresetintrin.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_int.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fintrin.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x3.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/ia32intrin.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric.inl:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/c++/15.2.1/bits/charconv.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x3.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat2x2.hpp:
-
-/usr/include/bits/time.h:
-
-/usr/include/asm/posix_types.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x4.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlintrin.h:
-
-/usr/include/c++/15.2.1/cwctype:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat2x4.inl:
-
-/usr/include/asm-generic/errno-base.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x2.hpp:
-
-/usr/include/bits/stdlib-float.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x4.hpp:
-
-/usr/lib32/libxcb.so.1:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x4.inl:
-
-/usr/lib/libXdmcp.so.6:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x2.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec2.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fxsrintrin.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec4_simd.inl:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/usermsrintrin.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_common_simd.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat2x3.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat2x4.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat3x2.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat3x4.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat4x3.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x4.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/mat4x4.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/simd/matrix.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2satcvtintrin.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/vec3.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/matrix_transform.hpp:
-
-/usr/include/c++/15.2.1/bits/memoryfwd.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_common.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/vec4.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_matrix.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_trigonometric.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat3x3.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec3.hpp:
-
-/usr/include/bits/types/wint_t.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/keylockerintrin.h:
-
-/usr/include/c++/15.2.1/bits/locale_facets.tcc:
-
-/usr/include/asm/posix_types_64.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniint8intrin.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_float.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/exponential.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/constants.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/trigonometric.hpp:
-
-/usr/include/c++/15.2.1/stdexcept:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/type_ptr.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/integer.hpp:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec1.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/type_ptr.inl:
-
-/usr/lib32/libX11.so.6:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/vector_relational.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_mat4x2.inl:
-
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/func_vector_relational.hpp:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/bits/mathcalls-macros.h:
+/usr/include/c++/15.2.1/bits/alloc_traits.h:
 
 /usr/include/c++/15.2.1/system_error:
 
 /usr/include/bits/stdint-uintn.h:
 
 /usr/include/asm/errno.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/mat3x3.hpp:
+
+/usr/include/bits/time.h:
+
+/usr/include/asm/posix_types.h:
 
 /usr/include/bits/errno.h:
 
@@ -1533,15 +1553,13 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/sched.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/detail/type_vec.hpp:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/func_common_simd.inl:
 
 /usr/include/bits/fp-fast.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxintrin.h:
+/usr/include/bits/iscanonical.h:
 
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/c++/15.2.1/bits/basic_ios.tcc:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/gtc/type_ptr.inl:
 
 /usr/include/bits/local_lim.h:
 
@@ -1555,12 +1573,6 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/bits/math-vector.h:
 
-/home/hopperefs/work/projects/graphics_engine/src/glm/gtc/quaternion_simd.inl:
-
-/usr/include/c++/15.2.1/bits/char_traits.h:
-
-/usr/include/bits/mathcalls-narrow.h:
-
 /usr/include/wchar.h:
 
 /usr/include/bits/posix1_lim.h:
@@ -1569,23 +1581,27 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/c++/15.2.1/bits/allocator.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxmovrsintrin.h:
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/bits/posix2_lim.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/simd/matrix.h:
 
-/usr/include/features.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/sched.h:
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat.hpp:
 
 /usr/include/bits/setjmp.h:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/include/bits/types/mbstate_t.h:
 
 /usr/include/bits/wchar.h:
 
 /usr/include/bits/waitstatus.h:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x2.inl:
+
+/usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/15.2.1/tr1/ell_integral.tcc:
 
@@ -1597,10 +1613,6 @@ CMakeFiles/BRAINLESS.dir/src/glad.c.o:
 
 /usr/include/c++/15.2.1/bits/uses_allocator_args.h:
 
+/home/hopperefs/work/projects/graphics_engine/Dependencies/glm/detail/type_mat2x3.inl:
+
 /usr/include/c++/15.2.1/bits/basic_string.h:
-
-/usr/include/c++/15.2.1/bits/basic_string.tcc:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tbmintrin.h:
-
-/usr/include/c++/15.2.1/bits/codecvt.h:

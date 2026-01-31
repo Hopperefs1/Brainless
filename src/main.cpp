@@ -1,55 +1,29 @@
-#include "../shaders/shader.h"
-#include "glad.h"
-#include "glm/gtc/quaternion.hpp"
-#define STB_IMAGE_IMPLEMENTATION
-#include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
-#include "glm/gtc/type_ptr.hpp"
-#include "stb_image.h"
-#include <GLFW/glfw3.h>
-#include <iostream>
-
-GLFWwindow *window;
+#include "dependencies.h"
 
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
-glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 0.3f);
-glm::vec3 cameraZ = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraY = glm::vec3(0.0f, 1.0f, 0.0f);
-glm::vec3 cameraX = glm::vec3(1.0f,0.0f,0.0f);
-void framebuffer_size_callback(GLFWwindow *window, int width, int height);
-void render(GLFWwindow *window, unsigned int VAO, unsigned int texture1,
-            unsigned int texture2, unsigned int shaderProgram);
+
+My_window mywindow;
+My_texture texture;
+Camera cam1;
+void render(unsigned int VAO, unsigned int texture1, unsigned int texture2,
+            unsigned int shaderProgram, GLFWwindow *window);
 // simple vertex shader source code store in constant char string
-void input();
 int main() {
-  // INITIALIZING GLFW
-  glfwInit();
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-  glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+  // INITIALIZING GLFWG
 
-  // CREATING WINDOW
-  window = glfwCreateWindow(800, 600, "hello", NULL, NULL);
-
-  if (window == NULL) {
-    std::cout << "FAILED TO CREATE GLFW WINDOW" << std::endl;
-    glfwTerminate();
-
-    return -1;
-  }
-  glfwMakeContextCurrent(window);
-
-  //---------------------------------
-
+  cam1.cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
+  //-------------------------------
+  mywindow.width = 800;
+  mywindow.height = 600;
+  createWindow(&mywindow);
   // INITIALIZING GLAD
   if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
     std::cout << "FAILED TO INITIALIZE GLAD" << std::endl;
     return -1;
   }
-  glViewport(0, 0, 800, 600);
-
-  glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+  glViewport(0, 0, mywindow.width, mywindow.height);
+  cout << "hello4" << endl;
   //----------------------------------
 
   // TRIANGLE
@@ -93,46 +67,6 @@ int main() {
       glm::vec3(2.4f, -0.4f, -3.5f),  glm::vec3(-1.7f, 3.0f, -7.5f),
       glm::vec3(1.3f, -2.0f, -2.5f),  glm::vec3(1.5f, 2.0f, -2.5f),
       glm::vec3(1.5f, 0.2f, -1.5f),   glm::vec3(-1.3f, 1.0f, -1.5f)};
-  unsigned int texture1, texture2;
-  glGenTextures(1, &texture1);
-  glBindTexture(GL_TEXTURE_2D, texture1);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-  glPixelStorei(
-      GL_UNPACK_ALIGNMENT,
-      1); // whatever happens remember this one line for your whole life this
-          // makes opengl read the bytes of a image byte by byte with no padding
-
-  int width, height, nrChannels;
-  stbi_set_flip_vertically_on_load(true);
-  unsigned char *data =
-      stbi_load("../gyattrito.jpg", &width, &height, &nrChannels, 0);
-  if (data != NULL) {
-    GLenum format = GL_RGBA;
-    if (nrChannels == 3) {
-      format = GL_RGB;
-    }
-    glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format,
-                 GL_UNSIGNED_BYTE, data);
-  } else {
-    cerr << "image not loaded properly" << endl;
-  }
-
-  stbi_image_free(data);
-
-  glGenTextures(1, &texture2);
-  glBindTexture(GL_TEXTURE_2D, texture2);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-  glPixelStorei(
-      GL_UNPACK_ALIGNMENT,
-      1); // whatever happens remember this one line for your whole life this
-  //
-  data = stbi_load("../shub.jpg", &width, &height, &nrChannels, 0);
-  glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
-               GL_UNSIGNED_BYTE, data);
-
-  stbi_image_free(data);
 
   unsigned int VBO, VAO; // vertex buffer object(VBO) manages memory and
                          // vertices on gpu  vertex array object(VAO)....
@@ -161,38 +95,32 @@ int main() {
   shader *sobj = new shader("shaders/vertex.vert", "shaders/fragment.frag");
   sobj->shader_Compile(shaderProgram);
   glUseProgram(shaderProgram);
-  glUniform1i(glGetUniformLocation(shaderProgram, "texture1"), 0);
-  glUniform1i(glGetUniformLocation(shaderProgram, "texture2"), 1);
-
-  render(window, VAO, texture1, texture2, shaderProgram);
+  createTexture(&texture, "textures/kitty.jpg", "textures/wall.jpg",
+                shaderProgram);
+  render(VAO, texture.tex1, texture.tex2, shaderProgram, mywindow.window);
 
   glDeleteProgram(shaderProgram);
   glDeleteBuffers(1, &VBO);
   glDeleteVertexArrays(1, &VAO);
-  glDeleteTextures(1, &texture1);
+  glDeleteTextures(1, &texture.tex1);
+  glDeleteTextures(1, &texture.tex2);
   glfwTerminate();
   return 0;
 }
 
 // dont use now created problem fuck
 // function which will be called each time the glfw window is resized
-
-void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
-  glViewport(0, 0, width, height);
-}
-
 float angle = 0.0f;
-void render(GLFWwindow *window, unsigned int VAO, unsigned int texture1,
-            unsigned int texture2, unsigned int shaderProgram) {
+void render(unsigned int VAO, unsigned int texture1, unsigned int texture2,
+            unsigned int shaderProgram, GLFWwindow *window) {
   glEnable(GL_DEPTH_TEST);
-
   while (glfwWindowShouldClose(window) == false) {
     float currentFrame = (float)glfwGetTime();
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // this is the colour which is shown
                                           // when the colour buffer is cleared
-    input();
+    input(&cam1, deltaTime, window);
 
     glClear(GL_COLOR_BUFFER_BIT |
             GL_DEPTH_BUFFER_BIT); // this clears the colour buffer
@@ -204,47 +132,17 @@ void render(GLFWwindow *window, unsigned int VAO, unsigned int texture1,
     glm::mat4 model = glm::mat4(1.0f);
     model = glm::rotate(model, (float)glfwGetTime() * glm::radians(angle),
                         glm::vec3(0.5f, 0.5f, 0.5f));
-    glm::mat4 view = glm::mat4(1.0f);
-    view = glm::lookAt(cameraPos, cameraPos + cameraZ, cameraY);
-    glm::mat4 projection;
-    projection =
-        glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+    viewMat(&cam1, shaderProgram);
+    projectionMat(shaderProgram);
+
     int modelLoc = glGetUniformLocation(shaderProgram, "model");
-    int viewLoc = glGetUniformLocation(shaderProgram, "view");
-    int projectionLoc = glGetUniformLocation(shaderProgram, "projection");
 
     glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 36);
     glfwPollEvents(); // this processes events such as user input
     glfwSwapBuffers(
         window); // swaps the front buffer with the back buffer (image is
                  // rendered in the back buffer) this prevents flickering
-  }
-}
-void input() {
-  const float cameraSpeed = 5.1f * deltaTime;
-  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-    cameraPos += cameraSpeed * cameraZ;
-  }
-  if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-    cameraPos -= cameraSpeed * cameraZ;
-  }
-  if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
-    cameraPos += cameraX * cameraSpeed;
-  }
-  if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
-    cameraPos -= cameraX * cameraSpeed;
-  }
-  if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) {
-    cameraPos += cameraSpeed * cameraY;
-  }
-  if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS) {
-    cameraPos -= cameraSpeed * cameraY;
-  }
-  if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS) {
-    angle = -55.5f;
   }
 }

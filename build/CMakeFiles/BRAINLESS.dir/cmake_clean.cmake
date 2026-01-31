@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/BRAINLESS.dir/link.d"
   "BRAINLESS"
   "BRAINLESS.pdb"
-  "CMakeFiles/BRAINLESS.dir/src/glad.c.o"
-  "CMakeFiles/BRAINLESS.dir/src/glad.c.o.d"
+  "CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o"
+  "CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o.d"
   "CMakeFiles/BRAINLESS.dir/src/main.cpp.o"
   "CMakeFiles/BRAINLESS.dir/src/main.cpp.o.d"
 )

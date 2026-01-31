@@ -1,7 +1,7 @@
 #ifndef SHADER_H
 #define SHADER_H
 
-#include "../src/glad.h"
+#include "../Dependencies/glad.h"
 #include <GLFW/glfw3.h>
 #include <fstream>
 #include <iostream>

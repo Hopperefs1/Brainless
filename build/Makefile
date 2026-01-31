@@ -503,29 +503,29 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-src/glad.o: src/glad.c.o
-.PHONY : src/glad.o
+Dependencies/glad.o: Dependencies/glad.c.o
+.PHONY : Dependencies/glad.o
 
 # target to build an object file
-src/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/src/glad.c.o
-.PHONY : src/glad.c.o
+Dependencies/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o
+.PHONY : Dependencies/glad.c.o
 
-src/glad.i: src/glad.c.i
-.PHONY : src/glad.i
+Dependencies/glad.i: Dependencies/glad.c.i
+.PHONY : Dependencies/glad.i
 
 # target to preprocess a source file
-src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/src/glad.c.i
-.PHONY : src/glad.c.i
+Dependencies/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.i
+.PHONY : Dependencies/glad.c.i
 
-src/glad.s: src/glad.c.s
-.PHONY : src/glad.s
+Dependencies/glad.s: Dependencies/glad.c.s
+.PHONY : Dependencies/glad.s
 
 # target to generate assembly for a file
-src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/src/glad.c.s
-.PHONY : src/glad.c.s
+Dependencies/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.s
+.PHONY : Dependencies/glad.c.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -589,9 +589,9 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... BRAINLESS"
-	@echo "... src/glad.o"
-	@echo "... src/glad.i"
-	@echo "... src/glad.s"
+	@echo "... Dependencies/glad.o"
+	@echo "... Dependencies/glad.i"
+	@echo "... Dependencies/glad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
