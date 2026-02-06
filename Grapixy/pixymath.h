@@ -1,5 +1,5 @@
-#ifndef HOPPO_MATH_H
-#define HOPPO_MATH_H
+#ifndef PIXY_MATH_H
+#define PIXY_MATH_H
 
 typedef struct {
   float x;
