@@ -6,7 +6,7 @@
 #include "../Dependencies/glm/gtc/matrix_transform.hpp"
 #include "../Dependencies/glm/gtc/quaternion.hpp"
 #include "../Dependencies/glm/gtc/type_ptr.hpp"
-#include "../shaders/shader.h"
+#include "shaders/shader.h"
 
 typedef struct {
   glm::vec3 cameraPos;

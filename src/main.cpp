@@ -1,8 +1,8 @@
-#include "camera.h"
-#include "window.h"
-#include "texture.h"
+#include "../Grapixy/camera.h"
+#include "../Grapixy/window.h"
+#include "../Grapixy/texture.h"
 #include "../Dependencies/glad.h"
-
+#include <iostream>
 My_window window1;
 My_texture texture;
 Camera3D cam1;
@@ -90,7 +90,7 @@ int main() {
   //----------------------------------
 
   unsigned int shaderProgram;
-  shader *sobj = new shader("shaders/vertex.vert", "shaders/fragment.frag");
+  shader *sobj = new shader("Grapixy/shaders/vertex.vert", "Grapixy/shaders/fragment.frag");
   sobj->shader_Compile(shaderProgram);
   glUseProgram(shaderProgram);
 
