@@ -5,13 +5,15 @@ cmake_policy(SET CMP0072 NEW)
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 
-set(HOPPOLIB_SOURCES
+set(GRAPIXY_SOURCES
 Grapixy/window.c
 Grapixy/window.h
+Grapixy/Dependencies/glad.c
+Grapixy/Dependencies/glad.h
 )
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/)
 
-add_executable(BRAINLESS src/main.cpp Dependencies/glad.h Dependencies/glad.c ${HOPPOLIB_SOURCES})
+add_executable(BRAINLESS src/main.cpp ${HOPPOLIB_SOURCES})
 target_link_libraries(BRAINLESS glfw OpenGL::GL)
 include(CTest)
 enable_testing()

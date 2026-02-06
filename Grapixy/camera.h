@@ -2,10 +2,10 @@
 #define MYPROJ_CAMERA_H
 
 // dependencies
-#include "../Dependencies/glm/glm.hpp"
-#include "../Dependencies/glm/gtc/matrix_transform.hpp"
-#include "../Dependencies/glm/gtc/quaternion.hpp"
-#include "../Dependencies/glm/gtc/type_ptr.hpp"
+#include "Dependencies/glm/glm.hpp"
+#include "Dependencies/glm/gtc/matrix_transform.hpp"
+#include "Dependencies/glm/gtc/quaternion.hpp"
+#include "Dependencies/glm/gtc/type_ptr.hpp"
 #include "shaders/shader.h"
 
 typedef struct {

@@ -1,7 +1,7 @@
 #include "../Grapixy/camera.h"
 #include "../Grapixy/window.h"
 #include "../Grapixy/texture.h"
-#include "../Dependencies/glad.h"
+#include "../Grapixy/Dependencies/glad.h"
 #include <iostream>
 My_window window1;
 My_texture texture;

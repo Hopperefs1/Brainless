@@ -1,10 +1,10 @@
 #ifndef MY_TEXTURE_H
 #define MY_TEXTURE_H
 
-#include "../Dependencies/glad.h"
+#include "Dependencies/glad.h"
 #include <iostream>
 #define STB_IMAGE_IMPLEMENTATION
-#include "../Dependencies/stb_image.h"
+#include "Dependencies/stb_image.h"
 using namespace std;
 
 typedef struct {
